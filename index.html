@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Aug 19 2015 16:46:58 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Aug 20 2015 05:35:17 GMT+0000 (UTC) -->
 <html data-wf-site="55d2e6281066b24b5fd9a1f3" data-wf-page="55d2e6281066b24b5fd9a1f5">
 <head>
   <meta charset="utf-8">
@@ -24,11 +24,20 @@
   <script type="text/javascript" src="js/modernizr.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
   <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-66526811-1'], ['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 <body>
   <div class="w-nav navigation-bar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-    <div class="w-container"><a class="w-nav-brand brand-link" href="index.html"><h1 class="brand-text">EventSpace.Aim</h1></a>
-      <nav class="w-nav-menu navigation-menu" role="navigation"><a class="w-nav-link navigation-link" href="index.html">Home</a><a class="w-nav-link navigation-link" href="/contact">Contact</a>
+    <div class="w-container"><a class="w-nav-brand brand-link" href="index.html"><h1 class="brand-text" id="HomePane">EventSpace.Aim</h1></a>
+      <nav class="w-nav-menu navigation-menu" role="navigation"><a class="w-nav-link navigation-link" href="#HomePane">Home</a><a class="w-nav-link navigation-link" href="#EventPane">Event</a><a class="w-nav-link navigation-link" href="#AccessPane">Access</a><a class="w-nav-link navigation-link" href="#ContactPane">Contact</a>
       </nav>
       <div class="w-nav-button hamburger-button">
         <div class="w-icon-nav-menu"></div>
@@ -40,7 +49,7 @@
       <h1 class="hero-heading" data-ix="fade-in-bottom-page-loads">EventSpace.Aim</h1>
       <div class="hero-subheading" data-ix="fade-in-bottom-page-loads">AimはWebで働くヒトのための
         <br>イベント/コワーキング空間です。</div>
-      <div data-ix="fade-in-bottom-page-loads"><a class="button" href="#">sign up</a><a class="hollow-button all-caps" href="#">Learn more</a>
+      <div data-ix="fade-in-bottom-page-loads"><a class="button" href="#">利用申し込み</a><a class="hollow-button all-caps" href="#AccessPane">アクセス</a>
       </div>
     </div>
   </div>
@@ -80,22 +89,22 @@
   <div class="w-section section accent">
     <div class="w-container">
       <div class="section-title-group">
-        <h2 class="section-heading centered white">EVENT</h2>
+        <h2 class="section-heading centered white" id="EventPane">EVENT</h2>
         <div class="section-subheading center off-white">EventSpace.Aimで常時開催中のイベント紹介です。</div>
       </div>
       <div class="w-row">
         <div class="w-col w-col-6">
-          <div class="white-box transparent"><img class="fullwidth-image" src="images/city-scape.jpg">
+          <div class="white-box transparent"><img class="fullwidth-image" src="images/PAK62_yukikauhito20140315.jpg">
             <h3 class="white-text">Coders Guild</h3>
             <p class="white-text">「Webのオシゴト相談所」として、Webエンジニア/デザイナーの方々のスキルアップ相談を受け付けております。
-              <br>スキルアップのススメ方に関する相談から、進捗確認のサポート、日々の疑問など、実務経験豊富なAimスタッフが懇切丁寧に対応します。</p><a class="hollow-button" href="#">Learn more</a>
+              <br>スキルアップのススメ方に関する相談から、進捗確認のサポート、日々の疑問など、実務経験豊富なAimスタッフが懇切丁寧に対応します。</p>
           </div>
         </div>
         <div class="w-col w-col-6">
-          <div class="white-box transparent"><img class="fullwidth-image" src="images/photo-1416400639808-f41f0c149b09.jpg">
+          <div class="white-box transparent"><img class="fullwidth-image" src="images/C789_keitaitomba.jpg">
             <h3 class="white-text">もくもく相談室</h3>
             <p class="white-text">スキルアップはしたいけど、一人で勉強するのは不安…自分ではなかなか時間が取れない…そんなお悩みはありませんか？
-              <br>Aimでは定期的に「もくもく相談室」と題して、jQueryやLaravelなどWeb界隈でホットなテーマを選んで勉強会を開催しています。初心者の方でも気軽に質問可能ですのでお気軽にご参加ください!!</p><a class="hollow-button all-caps" href="#">Learn more</a>
+              <br>Aimでは定期的に「もくもく相談室」と題して、jQueryやLaravelなどWeb界隈でホットなテーマを選んで勉強会を開催しています。初心者の方でも気軽に質問可能ですのでお気軽にご参加ください!!</p>
           </div>
         </div>
       </div>
@@ -116,7 +125,7 @@
           <br>要&nbsp;事前予約</p>
       </div>
       <div class="section-title-group">
-        <h2 class="section-heading centered">Access</h2>
+        <h2 class="section-heading centered" id="AccessPane">Access</h2>
         <div class="w-row">
           <div class="w-col w-col-6">
             <p>住所
@@ -129,6 +138,35 @@
           </div>
           <div class="w-col w-col-6">
             <div class="w-widget w-widget-map aimmap" data-widget-latlng="34.69236,135.516133" data-widget-style="roadmap" data-widget-zoom="15"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-title-group">
+        <h2 class="section-heading centered" id="ContactPane">Contact</h2>
+        <p>EventSpace.Aimの利用申し込みは、事前申し込みが必要です。
+          <br>
+          <br>イベントの開催や、団体での利用、地方イベント等での管理人不在など、
+          <br>スケジュールによってはご利用いただけないケースが御座いますので、予めご了承ください。</p>
+        <div class="w-row">
+          <div class="w-col w-col-4">
+            <p>コワーキングの利用について
+              <br>
+              <br>お名前、ご利用の日時、利用目的等を添えて、
+              <br>ページ下部のContactよりご連絡ください。
+              <br>
+              <br>ご連絡はメールのほか、TwitterやFacebookページでも受け付けておりますので、お気軽にご利用くださいませ。</p>
+          </div>
+          <div class="w-col w-col-4">
+            <p>イベント参加に関するご連絡
+              <br>
+              <br>イベント等での参加申し込みは、各イベント募集ページにて行っております。Connpass等、イベント毎の募集ページをご確認ください。
+              <br>
+              <br>参加検討に関する不明点・ご相談はお気軽にページ下部のContactまでご連絡ください。</p>
+          </div>
+          <div class="w-col w-col-4">
+            <p>施設利用に関するお問い合わせ
+              <br>
+              <br>EventSpace.Aimで開催中のイベントや、EventSpace.Aimでのイベント開催、施設利用に関する相談・お問い合せはお気軽に、ページ下部のContactよりお問い合わせください。</p>
           </div>
         </div>
       </div>
@@ -146,19 +184,17 @@
             <br>フロンティア天満ビル&nbsp;６Ｆ</p>
         </div>
         <div class="w-col w-col-4 spc">
-          <h5>useful links</h5><a class="footer-link" href="#">Phasellus gravida semper nisi</a><a class="footer-link" href="#">Suspendisse nisl elit</a><a class="footer-link" href="#">Dellentesque habitant morbi</a><a class="footer-link" href="#">Etiam sollicitudin ipsum</a>
+          <h5>useful links</h5><a class="footer-link" href="index.html">EventSpace.Aim</a><a class="footer-link" href="http://aim.connpass.com/" target="_blank">イベント一覧</a><a class="footer-link" href="contact.html">利用申し込み・お問い合わせ</a><a class="footer-link" href="http://chatbox-inc.com" target="_blank">運営：chatbox.inc</a>
         </div>
         <div class="w-col w-col-4">
           <h5>social</h5>
-          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-18.svg" width="20"><a class="footer-link with-icon" href="#">Twitter</a>
+          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-18.svg" width="20"><a class="footer-link with-icon" href="https://twitter.com/EventSpaceAim" target="_blank">Twitter</a>
           </div>
-          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-03.svg" width="20"><a class="footer-link with-icon" href="#">Facebook</a>
+          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-03.svg" width="20"><a class="footer-link with-icon" href="https://www.facebook.com/EventSpaceAim" target="_blank">Facebook</a>
           </div>
-          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-11.svg" width="20"><a class="footer-link with-icon" href="#">Pinterest</a>
+          <div class="footer-link-wrapper"><a class="footer-link with-icon" href="http://aim.connpass.com/" target="_blank">Connpass</a>
           </div>
-          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-06.svg" width="20"><a class="footer-link with-icon" href="#">Google</a>
-          </div>
-          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-12.svg" width="20"><a class="footer-link with-icon" href="#">Webflow</a>
+          <div class="footer-link-wrapper"><a class="footer-link with-icon" href="mailto:aim@chatbox-inc.com" target="_blank">E-mail Address</a>
           </div>
         </div>
       </div>
@@ -166,7 +202,7 @@
   </div>
   <div class="w-section footer center">
     <div class="w-container">
-      <div class="footer-text">Copyright Velocity Inc. Made in Webflow.</div>
+      <div class="footer-text">Copyright EventSpace.Aim&nbsp; Made in Webflow.</div>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

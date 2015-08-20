@@ -10,6 +10,7 @@ h1 {
   font-size: 38px;
   line-height: 44px;
   font-weight: 700;
+  text-align: center;
 }
 h2 {
   margin-bottom: 10px;
@@ -151,8 +152,8 @@ p {
   padding-top: 195px;
   padding-bottom: 195px;
   border-bottom: 4px solid #69b9ff;
-  background-image: -webkit-linear-gradient(192deg, rgba(46, 157, 255, 0.49), rgba(46, 157, 255, 0.21)), url('../images/photo-1416359658663-73a3834895eb.jpg');
-  background-image: linear-gradient(258deg, rgba(46, 157, 255, 0.49), rgba(46, 157, 255, 0.21)), url('../images/photo-1416359658663-73a3834895eb.jpg');
+  background-image: -webkit-linear-gradient(192deg, rgba(46, 157, 255, 0.49), rgba(46, 157, 255, 0.21)), url('../images/HIRO96_ukabukamo.jpg');
+  background-image: linear-gradient(258deg, rgba(46, 157, 255, 0.49), rgba(46, 157, 255, 0.21)), url('../images/HIRO96_ukabukamo.jpg');
   background-position: 0% 0%, 50% 50%;
   background-size: auto, cover;
   text-align: center;
