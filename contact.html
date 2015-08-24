@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Mon Aug 24 2015 14:43:43 GMT+0000 (UTC) -->
+<!-- Last Published: Mon Aug 24 2015 14:50:31 GMT+0000 (UTC) -->
 <html data-wf-site="55d2e6281066b24b5fd9a1f3" data-wf-page="55d534b6fa59c51977886a28">
 <head>
   <meta charset="utf-8">
@@ -53,18 +53,18 @@
         <br>スケジュールによってはご利用いただけないケースが御座いますので、予めご了承ください。</p>
       <div class="w-tabs casetab" data-duration-in="300" data-duration-out="100">
         <div class="w-tab-menu">
-          <a class="w-tab-link w-inline-block tablink" data-w-tab="Tab 1">
+          <a class="w-tab-link w--current w-inline-block tablink" data-w-tab="Tab 1">
             <div>コワーキング利用</div>
           </a>
           <a class="w-tab-link w-inline-block tablink" data-w-tab="Tab 2">
             <div>イベント利用</div>
           </a>
-          <a class="w-tab-link w--current w-inline-block tablink" data-w-tab="Tab 3">
+          <a class="w-tab-link w-inline-block tablink" data-w-tab="Tab 3">
             <div>その他</div>
           </a>
         </div>
         <div class="w-tab-content">
-          <div class="w-tab-pane" data-w-tab="Tab 1">
+          <div class="w-tab-pane w--tab-active" data-w-tab="Tab 1">
             <p>コワーキング利用のお申し込みの際には、
               <br>「ご利用の日時」「利用目的」等を添えてご連絡ください。
               <br>
@@ -78,7 +78,7 @@
               <br>なお、個々の開催・募集イベントに関するお申し込みは、
               <br>専用の申し込みフォームをご利用ください。</p>
           </div>
-          <div class="w-tab-pane w--tab-active" data-w-tab="Tab 3">
+          <div class="w-tab-pane" data-w-tab="Tab 3">
             <p>その他施設利用に関するお問い合わせ等もお気軽にお申し付けください。
               <br>
               <br>お問い合わせ内容と連絡先、簡単なプロフィール等を添えていただけると、
@@ -89,18 +89,18 @@
       <div class="w-form">
         <form id="email-form" name="email-form" data-name="Email Form">
           <label for="name">お名前:</label>
-          <input class="w-input" id="name" type="text" placeholder="Enter your name" name="name" data-name="Name">
+          <input class="w-input" id="name" type="text" placeholder="Enter your name" name="name" data-name="Name" required="required">
           <label for="email">Email アドレス:</label>
           <input class="w-input" id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
-          <label for="field">お問い合わせ内容:</label>
-          <select class="w-select" id="field" name="field" required="required">
+          <label for="Type">お問い合わせ内容:</label>
+          <select class="w-select" id="Type" name="Type" required="required" data-name="Type">
             <option value="">Select one...</option>
             <option value="First">コワーキング利用</option>
             <option value="Second">イベントに関するお問い合わせ</option>
             <option value="others">その他</option>
           </select>
           <label for="field-2">連絡欄:</label>
-          <textarea class="w-input messageform" id="field-2" placeholder="Example Text" name="field-2"></textarea>
+          <textarea class="w-input messageform" id="field-2" placeholder="Message" name="field-2"></textarea>
           <input class="w-button" type="submit" value="Submit" data-wait="Please wait...">
         </form>
         <div class="w-form-done">
