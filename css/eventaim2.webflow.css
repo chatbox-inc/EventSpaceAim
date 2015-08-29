@@ -56,6 +56,7 @@ p {
   font-size: 14px;
   line-height: 25px;
   font-weight: 300;
+  text-align: center;
 }
 .button {
   display: inline-block;
@@ -153,8 +154,8 @@ p {
   padding-top: 195px;
   padding-bottom: 195px;
   border-bottom: 4px solid #69b9ff;
-  background-image: -webkit-radial-gradient(30% 61%, circle closest-side, rgba(46, 157, 255, 0.49), rgba(46, 157, 255, 0.21)), url('../images/55d565c4fa59c51977887095_HIRO96_ukabukamo.jpg');
-  background-image: radial-gradient(circle closest-side at 30% 61%, rgba(46, 157, 255, 0.49), rgba(46, 157, 255, 0.21)), url('../images/55d565c4fa59c51977887095_HIRO96_ukabukamo.jpg');
+  background-image: -webkit-radial-gradient(30% 61%, circle closest-side, rgba(46, 157, 255, 0.49), rgba(46, 157, 255, 0.2)), url('../images/55d565c4fa59c51977887095_HIRO96_ukabukamo.jpg');
+  background-image: radial-gradient(circle closest-side at 30% 61%, rgba(46, 157, 255, 0.49), rgba(46, 157, 255, 0.2)), url('../images/55d565c4fa59c51977887095_HIRO96_ukabukamo.jpg');
   background-position: 0% 0%, 50% 50%;
   background-size: auto, cover;
   text-align: center;
@@ -319,8 +320,47 @@ p {
   margin-bottom: 31px;
 }
 .tablink {
-  width: 200px;
+  width: 160px;
   text-align: center;
+}
+.heroblock {
+  height: auto;
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-image: url('../images/PAK62_yukikauhito20140315.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+.mokustaffimg {
+  display: block;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 506px;
+}
+.mokustaffimgcontainer {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 49px;
+  padding-left: 52px;
+}
+.text-left {
+  text-align: left;
+}
+.mokubriefpara {
+  margin-bottom: 60px;
+}
+.mokuheropara {
+  color: white;
+  text-shadow: black 1px 1px 6px, rgba(0, 0, 0, 0.21) 0px -1px 0px;
+}
+.footertext {
+  color: #676770;
+  text-decoration: none;
 }
 html.w-mod-js *[data-ix="fade-in-bottom-page-loads"] {
   opacity: 0;
@@ -369,6 +409,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
     text-transform: capitalize;
   }
   .navigation-link {
+    display: block;
     color: rgba(255, 255, 255, 0.52);
   }
   .navigation-link.w--current {
@@ -451,6 +492,9 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   }
   .titlespan {
     display: block;
+  }
+  .heroblock {
+    background-position: 50% 100%;
   }
 }
 

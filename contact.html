@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Mon Aug 24 2015 15:57:22 GMT+0000 (UTC) -->
+<!-- Last Published: Sat Aug 29 2015 18:23:04 GMT+0000 (UTC) -->
 <html data-wf-site="55d2e6281066b24b5fd9a1f3" data-wf-page="55d534b6fa59c51977886a28">
 <head>
   <meta charset="utf-8">
@@ -36,7 +36,7 @@
 <body>
   <div class="w-nav navigation-bar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container"><a class="w-nav-brand brand-link" href="index.html"><h1 class="brand-text" id="HomePane">EventSpace.Aim</h1></a>
-      <nav class="w-nav-menu navigation-menu" role="navigation"><a class="w-nav-link navigation-link" href="index.html">Home</a><a class="w-nav-link navigation-link" href="/#EventPane">Event</a><a class="w-nav-link navigation-link" href="/#AccessPane">Access</a><a class="w-nav-link navigation-link" href="contact.html">Contact</a>
+      <nav class="w-nav-menu navigation-menu" role="navigation"><a class="w-nav-link navigation-link" href="index.html">Home</a><a class="w-nav-link navigation-link" href="/#EventPane">Event</a><a class="w-nav-link navigation-link" href="/#AccessPane">Access</a><a class="w-nav-link navigation-link" href="guild.html">Corders Guild</a><a class="w-nav-link navigation-link" href="contact.html">Contact</a>
       </nav>
       <div class="w-nav-button hamburger-button">
         <div class="w-icon-nav-menu"></div>
@@ -53,10 +53,10 @@
         <br>スケジュールによってはご利用いただけないケースが御座いますので、予めご了承ください。</p>
       <div class="w-tabs casetab" data-duration-in="300" data-duration-out="100">
         <div class="w-tab-menu">
-          <a class="w-tab-link w--current w-inline-block tablink" data-w-tab="Tab 1">
-            <div>コワーキング利用</div>
+          <a class="w-tab-link w-inline-block tablink" data-w-tab="Tab 1">
+            <div>コワーキング</div>
           </a>
-          <a class="w-tab-link w-inline-block tablink" data-w-tab="Tab 2">
+          <a class="w-tab-link w--current w-inline-block tablink" data-w-tab="Tab 2">
             <div>イベント利用</div>
           </a>
           <a class="w-tab-link w-inline-block tablink" data-w-tab="Tab 3">
@@ -64,14 +64,14 @@
           </a>
         </div>
         <div class="w-tab-content">
-          <div class="w-tab-pane w--tab-active" data-w-tab="Tab 1">
+          <div class="w-tab-pane" data-w-tab="Tab 1">
             <p>コワーキング利用のお申し込みの際には、
               <br>「ご利用の日時」「利用目的」等を添えてご連絡ください。
               <br>
               <br>イベントの開催や、団体利用の予約、管理人の不在等の理由により
               <br>ご希望のお申込み日時に添えない場合がございます。</p>
           </div>
-          <div class="w-tab-pane" data-w-tab="Tab 2">
+          <div class="w-tab-pane w--tab-active" data-w-tab="Tab 2">
             <p>EventSpace.Aimで開催したい・開催してほしいイベントなどのご要望も
               <br>お気軽にお寄せいただけますと運営の参考になります。
               <br>
@@ -96,6 +96,7 @@
           <select class="w-select" id="Type" name="Type" required="required" data-name="Type">
             <option value="">Select one...</option>
             <option value="First">コワーキング利用</option>
+            <option value="guild">Corders Guildのご相談</option>
             <option value="Second">イベントに関するお問い合わせ</option>
             <option value="others">その他</option>
           </select>
@@ -117,14 +118,14 @@
       <div class="w-row">
         <div class="w-col w-col-4 spc">
           <h5>EventSpace.Aim</h5>
-          <p>AimはWebで働くヒトのための、
+          <p class="text-left">AimはWebで働くヒトのための、
             <br>イベント/コワーキング空間です。
             <br>
             <br>大阪府大阪市北区天満2-2-15
             <br>フロンティア天満ビル&nbsp;６Ｆ</p>
         </div>
         <div class="w-col w-col-4 spc">
-          <h5>useful links</h5><a class="footer-link" href="index.html">EventSpace.Aim</a><a class="footer-link" href="http://aim.connpass.com/" target="_blank">イベント一覧 (Connpass)</a><a class="footer-link" href="contact.html">利用申し込み・お問い合わせ</a><a class="footer-link" href="http://www.amazon.co.jp/registry/wishlist/1AFHTR8X1QRIE/ref=cm_sw_r_tw_ws_VqY2vb0Z8BYA8" target="_blank">Wish List</a><a class="footer-link" href="http://chatbox-inc.com" target="_blank">運営：chatbox.inc</a>
+          <h5>useful links</h5><a class="footer-link" href="index.html">EventSpace.Aim</a><a class="footer-link" href="guild.html" target="_blank">Corders Guild</a><a class="footer-link" href="contact.html">利用申し込み・お問い合わせ</a><a class="footer-link" href="http://aim.connpass.com/" target="_blank">イベント一覧 (Connpass)</a>
         </div>
         <div class="w-col w-col-4">
           <h5>Socials</h5>
@@ -134,13 +135,17 @@
           </div>
           <div class="footer-link-wrapper"><a class="footer-link with-icon" href="mailto:aim@chatbox-inc.com" target="_blank">E-mail Address</a>
           </div>
+          <div class="footer-link-wrapper"><a class="footer-link with-icon" href="http://www.amazon.co.jp/registry/wishlist/1AFHTR8X1QRIE/ref=cm_sw_r_tw_ws_VqY2vb0Z8BYA8" target="_blank">Wish List (Amazon)</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="w-section footer center">
     <div class="w-container">
-      <div class="footer-text">Copyright EventSpace.Aim&nbsp; Made in Webflow.</div>
+      <div class="footer-text">Copyright EventSpace.Aim&nbsp; Made in Webflow.
+        <br>運営　<a class="footertext" target="_blank" href="http://chatbox-inc.com">株式会社chatbox</a>
+      </div>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
