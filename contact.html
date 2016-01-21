@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sat Aug 29 2015 18:23:04 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Jan 21 2016 01:34:59 GMT+0000 (UTC) -->
 <html data-wf-site="55d2e6281066b24b5fd9a1f3" data-wf-page="55d534b6fa59c51977886a28">
 <head>
   <meta charset="utf-8">
@@ -34,9 +34,9 @@
   </script>
 </head>
 <body>
-  <div class="w-nav navigation-bar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-    <div class="w-container"><a class="w-nav-brand brand-link" href="index.html"><h1 class="brand-text" id="HomePane">EventSpace.Aim</h1></a>
-      <nav class="w-nav-menu navigation-menu" role="navigation"><a class="w-nav-link navigation-link" href="index.html">Home</a><a class="w-nav-link navigation-link" href="/#EventPane">Event</a><a class="w-nav-link navigation-link" href="/#AccessPane">Access</a><a class="w-nav-link navigation-link" href="guild.html">Corders Guild</a><a class="w-nav-link navigation-link" href="contact.html">Contact</a>
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" class="w-nav navigation-bar">
+    <div class="w-container"><a href="index.html" class="w-nav-brand brand-link"><h1 id="HomePane" class="brand-text">EventSpace.Aim</h1></a>
+      <nav role="navigation" class="w-nav-menu navigation-menu"><a href="index.html" class="w-nav-link navigation-link">Home</a><a href="/#EventPane" class="w-nav-link navigation-link">Event</a><a href="/#AccessPane" class="w-nav-link navigation-link">Access</a><a href="guild.html" class="w-nav-link navigation-link">Corders Guild</a><a href="contact.html" class="w-nav-link navigation-link">Contact</a>
       </nav>
       <div class="w-nav-button hamburger-button">
         <div class="w-icon-nav-menu"></div>
@@ -45,40 +45,40 @@
   </div>
   <div class="w-section section">
     <h1>EventSpace.Aim<br>利用申込・お問い合わせ</h1>
-    <div class="w-widget w-widget-map" data-widget-latlng="34.69236,135.516133" data-widget-style="roadmap" data-widget-zoom="16"></div>
+    <div data-widget-latlng="34.68598,135.503385" data-widget-style="roadmap" data-widget-zoom="16" class="w-widget w-widget-map"></div>
     <div class="w-container">
       <p>EventSpace.Aimの利用申し込みは、事前申し込みが必要です。
         <br>
         <br>イベントの開催や、団体での利用、地方イベント等での管理人不在など、
         <br>スケジュールによってはご利用いただけないケースが御座いますので、予めご了承ください。</p>
-      <div class="w-tabs casetab" data-duration-in="300" data-duration-out="100">
+      <div data-duration-in="300" data-duration-out="100" class="w-tabs casetab">
         <div class="w-tab-menu">
-          <a class="w-tab-link w-inline-block tablink" data-w-tab="Tab 1">
+          <a data-w-tab="Tab 1" class="w-tab-link w-inline-block tablink">
             <div>コワーキング</div>
           </a>
-          <a class="w-tab-link w--current w-inline-block tablink" data-w-tab="Tab 2">
+          <a data-w-tab="Tab 2" class="w-tab-link w--current w-inline-block tablink">
             <div>イベント利用</div>
           </a>
-          <a class="w-tab-link w-inline-block tablink" data-w-tab="Tab 3">
+          <a data-w-tab="Tab 3" class="w-tab-link w-inline-block tablink">
             <div>その他</div>
           </a>
         </div>
         <div class="w-tab-content">
-          <div class="w-tab-pane" data-w-tab="Tab 1">
+          <div data-w-tab="Tab 1" class="w-tab-pane">
             <p>コワーキング利用のお申し込みの際には、
               <br>「ご利用の日時」「利用目的」等を添えてご連絡ください。
               <br>
               <br>イベントの開催や、団体利用の予約、管理人の不在等の理由により
               <br>ご希望のお申込み日時に添えない場合がございます。</p>
           </div>
-          <div class="w-tab-pane w--tab-active" data-w-tab="Tab 2">
+          <div data-w-tab="Tab 2" class="w-tab-pane w--tab-active">
             <p>EventSpace.Aimで開催したい・開催してほしいイベントなどのご要望も
               <br>お気軽にお寄せいただけますと運営の参考になります。
               <br>
               <br>なお、個々の開催・募集イベントに関するお申し込みは、
               <br>専用の申し込みフォームをご利用ください。</p>
           </div>
-          <div class="w-tab-pane" data-w-tab="Tab 3">
+          <div data-w-tab="Tab 3" class="w-tab-pane">
             <p>その他施設利用に関するお問い合わせ等もお気軽にお申し付けください。
               <br>
               <br>お問い合わせ内容と連絡先、簡単なプロフィール等を添えていただけると、
@@ -89,11 +89,11 @@
       <div class="w-form">
         <form id="email-form" name="email-form" data-name="Email Form">
           <label for="name">お名前:</label>
-          <input class="w-input" id="Name-2" type="text" placeholder="Input your name..." name="Name" required="required" data-name="Name">
+          <input id="Name-2" type="text" placeholder="Input your name..." name="Name" required="required" data-name="Name" class="w-input">
           <label for="email">Email アドレス:</label>
-          <input class="w-input" id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
+          <input id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required" class="w-input">
           <label for="Type">お問い合わせ内容:</label>
-          <select class="w-select" id="Type" name="Type" required="required" data-name="Type">
+          <select id="Type" name="Type" required="required" data-name="Type" class="w-select">
             <option value="">Select one...</option>
             <option value="First">コワーキング利用</option>
             <option value="guild">Corders Guildのご相談</option>
@@ -101,8 +101,8 @@
             <option value="others">その他</option>
           </select>
           <label for="Message">連絡欄:</label>
-          <textarea class="w-input messageform" id="Message" placeholder="Message" name="Message" data-name="Message"></textarea>
-          <input class="w-button" type="submit" value="Submit" data-wait="Please wait...">
+          <textarea id="Message" placeholder="Message" name="Message" data-name="Message" class="w-input messageform"></textarea>
+          <input type="submit" value="Submit" data-wait="Please wait..." class="w-button">
         </form>
         <div class="w-form-done">
           <p>メッセージを受け付けました。ありがとうございます。</p>
@@ -125,17 +125,15 @@
             <br>フロンティア天満ビル&nbsp;６Ｆ</p>
         </div>
         <div class="w-col w-col-4 spc">
-          <h5>useful links</h5><a class="footer-link" href="index.html">EventSpace.Aim</a><a class="footer-link" href="guild.html" target="_blank">Corders Guild</a><a class="footer-link" href="contact.html">利用申し込み・お問い合わせ</a><a class="footer-link" href="http://aim.connpass.com/" target="_blank">イベント一覧 (Connpass)</a>
+          <h5>useful links</h5><a href="index.html" class="footer-link">EventSpace.Aim</a><a href="guild.html" target="_blank" class="footer-link">Corders Guild</a><a href="contact.html" class="footer-link">利用申し込み・お問い合わせ</a><a href="http://aim.connpass.com/" target="_blank" class="footer-link">イベント一覧 (Connpass)</a>
         </div>
         <div class="w-col w-col-4">
           <h5>Socials</h5>
-          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-18.svg" width="20"><a class="footer-link with-icon" href="https://twitter.com/EventSpaceAim" target="_blank">Twitter</a>
+          <div class="w-clearfix footer-link-wrapper"><img width="20" src="images/social-18.svg" class="info-icon"><a href="https://twitter.com/EventSpaceAim" target="_blank" class="footer-link with-icon">Twitter</a>
           </div>
-          <div class="w-clearfix footer-link-wrapper"><img class="info-icon" src="images/social-03.svg" width="20"><a class="footer-link with-icon" href="https://www.facebook.com/EventSpaceAim" target="_blank">Facebook</a>
+          <div class="w-clearfix footer-link-wrapper"><img width="20" src="images/social-03.svg" class="info-icon"><a href="https://www.facebook.com/EventSpaceAim" target="_blank" class="footer-link with-icon">Facebook</a>
           </div>
-          <div class="footer-link-wrapper"><a class="footer-link with-icon" href="mailto:aim@chatbox-inc.com" target="_blank">E-mail Address</a>
-          </div>
-          <div class="footer-link-wrapper"><a class="footer-link with-icon" href="http://www.amazon.co.jp/registry/wishlist/1AFHTR8X1QRIE/ref=cm_sw_r_tw_ws_VqY2vb0Z8BYA8" target="_blank">Wish List (Amazon)</a>
+          <div class="footer-link-wrapper"><a href="mailto:aim@chatbox-inc.com" target="_blank" class="footer-link with-icon">E-mail Address</a>
           </div>
         </div>
       </div>
